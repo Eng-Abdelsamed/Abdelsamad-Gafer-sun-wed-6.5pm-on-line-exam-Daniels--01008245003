@@ -1,0 +1,774 @@
+/* *start global style */
+
+*,
+*::after,
+::before {
+  box-sizing: border-box;
+}
+
+a {
+  color: inherit !important;
+  text-decoration: none;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
+  position: relative;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Montserrat", sans-serif;
+}
+
+.title h3 {
+  position: relative;
+  z-index: 2;
+}
+
+.title h3::after {
+  content: "";
+  width: 22%;
+  height: 30px;
+  background-repeat: repeat;
+  position: absolute;
+  bottom: 40px;
+  left: 50%;
+  transform: translate(-50%);
+  z-index: -1;
+  background-image: url(../images/dots.png);
+}
+.title h3 {
+  font-weight: 900;
+}
+
+/* *end global style */
+
+/* *start navbar style */
+
+.my-nav {
+  z-index: 999;
+}
+
+.my-nav a.dan {
+  font-family: "Montserrat", sans-serif;
+  color: rgb(28, 28, 28);
+  font-size: 23px;
+  font-weight: 800;
+  line-height: 24px;
+  padding: 0;
+  margin: -20px;
+}
+
+.my-nav .nav-link {
+  color: black;
+  font-size: large;
+}
+
+.my-nav .nav-link.active {
+  color: black;
+  position: relative;
+}
+
+.my-nav .nav-link.active::after {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: 6px;
+  left: 10%;
+  width: 77%;
+  height: 2px;
+  background-color: black;
+  transition: width 0.7s;
+}
+.my-nav .nav-link::after {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0%;
+  height: 2px;
+  background-color: black;
+}
+
+/* .my-nav a.actives::after{
+    content: "";
+    width: 85%;
+    height: 2px;
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 5px;
+    background-color: black;
+} */
+
+/*  *end navbar style  */
+
+/* *start header style */
+.home {
+  min-height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.65)), url(../images/bg.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.home .my-icon {
+  background-color: #010a10;
+  width: 35px;
+  height: 35px;
+  background-color: #020b11;
+  margin-right: 2px;
+}
+
+.home h1 span::after {
+  content: "";
+  animation: typing 11s ease-in infinite;
+}
+
+@keyframes typing {
+  0% {
+    content: " D|";
+  }
+
+  1.7% {
+    content: "De|";
+  }
+
+  3.4% {
+    content: "Des|";
+  }
+
+  5.1% {
+    content: "Desi|";
+  }
+
+  6.8% {
+    content: "Desig|";
+  }
+
+  8.5% {
+    content: "Design|";
+  }
+
+  10.2% {
+    content: "Designe|";
+  }
+
+  11.9% {
+    content: "Designer|";
+  }
+
+  17% {
+    content: "Designe|";
+  }
+
+  18% {
+    content: "Design|";
+  }
+
+  19.2% {
+    content: "Desig|";
+  }
+
+  20.3% {
+    content: "Desi|";
+  }
+
+  22% {
+    content: "Des|";
+  }
+
+  23.7% {
+    content: "De|";
+  }
+
+  25.4% {
+    content: "D|";
+  }
+
+  27.1% {
+    content: "De|";
+  }
+
+  28.8% {
+    content: "Dev|";
+  }
+
+  30.5% {
+    content: "Deve|";
+  }
+
+  32.2% {
+    content: "Devel|";
+  }
+
+  33.9% {
+    content: "Develo|";
+  }
+
+  35.6% {
+    content: "Develop|";
+  }
+
+  37.3% {
+    content: "Develope|";
+  }
+
+  39% {
+    content: "Developer|";
+  }
+
+  44% {
+    content: "Develope|";
+  }
+
+  45% {
+    content: "Develop|";
+  }
+
+  46% {
+    content: "Develo|";
+  }
+
+  47.1% {
+    content: "Devel|";
+  }
+
+  48.8% {
+    content: "Deve|";
+  }
+
+  50.5% {
+    content: "Dev|";
+  }
+
+  52.2% {
+    content: "De|";
+  }
+
+  53.9% {
+    content: "D|";
+  }
+
+  55.6% {
+    content: "L|";
+  }
+
+  57.3% {
+    content: "La|";
+  }
+
+  59% {
+    content: "Lar|";
+  }
+
+  60.7% {
+    content: "Larr|";
+  }
+
+  62.4% {
+    content: "Larry|";
+  }
+
+  64.1% {
+    content: "Larry |";
+  }
+
+  65.8% {
+    content: "Larry D|";
+  }
+
+  67.5% {
+    content: "Larry Da|";
+  }
+
+  69.2% {
+    content: "Larry Dan|";
+  }
+
+  70.9% {
+    content: "Larry Dani|";
+  }
+
+  72.6% {
+    content: "Larry Dani|";
+  }
+
+  74.3% {
+    content: "Larry Danie|";
+  }
+
+  76% {
+    content: "Larry Daniel|";
+  }
+
+  77.7% {
+    content: "Larry Daniels|";
+  }
+
+  83% {
+    content: "Larry Daniel|";
+  }
+
+  84% {
+    content: "Larry Danie|";
+  }
+
+  85% {
+    content: "Larry Dani|";
+  }
+
+  86% {
+    content: "Larry Dan|";
+  }
+
+  87.7% {
+    content: "Larry Da|";
+  }
+
+  89.4% {
+    content: "Larry D|";
+  }
+
+  91.1% {
+    content: "Larry |";
+  }
+
+  92.8% {
+    content: "Larry|";
+  }
+
+  94.5% {
+    content: "Larr|";
+  }
+
+  96.2% {
+    content: "Lar|";
+  }
+
+  97.9% {
+    content: "La|";
+  }
+
+  99% {
+    content: "L|";
+  }
+
+  99.5% {
+    content: " |";
+  }
+  /* Restart cleanly */
+  100% {
+    content: " |";
+  }
+}
+
+/* *end header style */
+
+/* *start about style */
+.about img {
+  width: 100%;
+  display: block;
+}
+.about .my-img {
+  position: relative;
+}
+
+.about .my-img::after {
+  content: "";
+  width: 80%;
+  height: 90%;
+  background-repeat: repeat;
+  background-image: url(../images/dots.png);
+  position: absolute;
+  bottom: -40px;
+  left: -40px;
+  z-index: -1;
+}
+
+.about .content h3 {
+  color: #343434;
+}
+
+.about .content .sub {
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 20px;
+  color: #999;
+  letter-spacing: 1px;
+}
+
+.about .content p {
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 30px;
+  color: #748182;
+}
+
+.about .my-prog {
+  height: 30px;
+  margin-bottom: 35px;
+}
+
+.about .buttons .my-btn1,
+.my-btn2 {
+  transition-duration: 0.7s;
+  border: 1px solid black;
+  font-size: 17px;
+  padding: 10px 30px;
+  margin-top: 20px;
+}
+
+.about .buttons .my-btn1:hover {
+  color: black !important ;
+  background-color: white !important;
+}
+
+.about .buttons .my-btn2:hover {
+  color: white !important;
+  background-color: black !important;
+}
+
+/* *end about style */
+
+/* *start services style */
+
+.services {
+  background-color: #f7f7f7;
+}
+
+.services .my-cont .my-card .my-icon {
+  background-color: #f7f7f7;
+  width: 100px;
+  height: 100px;
+  font-size: 28px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  transition-duration: 0.5s;
+}
+
+.services .my-cont .my-card:hover .my-icon {
+  background-color: black;
+  color: white;
+}
+/* *end services style */
+
+/* *start works style */
+
+.works .item-img:hover .item-img-overlay {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.works .item-img:hover h6,
+.work .item-img:hover .icons {
+  transform: translateY(0);
+}
+
+.work .item-img h6 {
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  position: relative;
+  margin-bottom: 15px;
+  -webkit-transform: translateY(-15px);
+  transform: translateY(-15px);
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.works .item-img .icon i {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid #111;
+  background: #111;
+  color: #eee;
+  transition-duration: 0.5s !important;
+}
+
+.m-title {
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  left: 0;
+  transform: translate(0%, -50%);
+}
+
+.icons {
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  margin-top: 10px;
+  left: 0;
+  transform: translate(0%, -50%);
+  display: flex;
+  justify-content: center;
+}
+
+.works i:hover {
+  background-color: white !important;
+  border-radius: 50% !important;
+  color: black !important;
+}
+
+.works .item-img-overlay {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  right: 5px;
+  bottom: 5px;
+  background: rgba(255, 255, 255, 0.95);
+  opacity: 0;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  z-index: 2;
+  -webkit-transform: translateY(10px);
+  transform: translateY(10px);
+}
+
+/* *end works style */
+
+/* *start clients style */
+
+.clients {
+  background-color: #f7f7f7;
+}
+.clients .title h3::after {
+  content: "";
+  width: 31%;
+  height: 30px;
+  background-repeat: repeat;
+  position: absolute;
+  bottom: 40px;
+  left: 50%;
+  transform: translate(-50%);
+  z-index: -1;
+  background-image: url(../images/dots.png);
+}
+.clients .my-inner img {
+  width: 100px !important;
+  height: 100px !important;
+  border-radius: 50% !important;
+  margin-left: -5%;
+}
+
+.clients .my-indicators button {
+  background-color: #869791;
+  color: aqua;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  margin-inline: 10px;
+  margin-bottom: -50px;
+}
+.clients .my-indicators {
+  top: 75%;
+}
+
+/* *end clients style */
+
+/* *start icons style */
+.iconss h3 {
+  font-weight: 900 !important;
+}
+/* *end icons style */
+
+/* *start team style */
+
+.team {
+  background-color: #f7f7f7;
+}
+
+.team .title h3::after {
+  content: "";
+  width: 27%;
+  height: 30px;
+  background-repeat: repeat;
+  position: absolute;
+  bottom: 40px;
+  left: 50%;
+  transform: translate(-50%);
+  z-index: -1;
+  background-image: url(../images/dots.png);
+}
+
+.team .container .cartona .layer{
+ position: absolute;
+ top: 2.5%;
+ left: 2.5%;
+ background-color: rgba(255, 255, 255, 0.902);
+ height: 95%;
+ width: 95%;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ gap: 10px;
+ transform: scale(0.5) rotateY(270deg);
+ transition: all 0.5s ease-in;
+}
+.team .container .cartona:hover .layer{
+ transform: scale(1) rotatey(0);
+ transition:  .5s ease-in !important;
+}
+
+.team .container .cartona:hover img{
+  transform: scale(1.2)   !important;
+}
+.team .container .cartona img{
+    transition:  .5s ease !important ;
+
+}
+
+.team .container .layer i{
+  width: 40px;
+  height: 40px;
+  background-color: black;
+  color: white;
+  border-radius: 50%;
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-inline: 3px;
+}
+.team .container .layer i:hover{
+  color: black;
+  background-color: white;
+  
+}
+
+.team .container .caption {
+  background-color: #5B5B5B;
+}
+
+
+/* *end team style */
+
+/* *start contact style */
+.contact .container {
+  padding: 3% 10% 3% 10%;
+}
+
+.contact .title h3::after {
+  content: "";
+  width: 39%;
+  height: 30px;
+  background-repeat: repeat;
+  position: absolute;
+  bottom: 40px;
+  left: 50%;
+  transform: translate(-50%);
+  z-index: -1;
+  background-image: url(../images/dots.png);
+}
+
+.contact .contact-item .item {
+  margin-bottom: 30px;
+}
+
+.contact .contact-item {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.contact .item:hover .contact-icon {
+  background: #1c1c1c;
+  color: #eee;
+}
+
+.contact .contact-icon {
+  font-size: 25px;
+  margin-bottom: 15px;
+  width: 70px;
+  height: 70px;
+  line-height: 70px;
+  background: #f4f4f4;
+  border-radius: 50%;
+  display: inline-block;
+  transition: all 0.5s;
+}
+
+.contact .item h6 {
+  font-weight: 700;
+  margin-bottom: 10px;
+  font-size: 16px;
+  color: #343434;
+  font-family: "Montserrat", sans-serif;
+}
+
+.contact .item p {
+  font-size: 15px;
+  line-height: 24px;
+  font-family: "Poppins", sans-serif;
+  color: rgba(116, 129, 130, 0.877);
+}
+
+.contact form input,
+.contact form textarea {
+  width: 100%;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  background: #f4f4f4;
+  margin-bottom: 15px;
+  font-size: 15px;
+  font-family: "Poppins", sans-serif;
+  color: rgba(116, 129, 130, 0.877);
+}
+
+.contact form textarea {
+  height: 160px;
+  resize: none;
+}
+
+.contact form .buton {
+  width: 160px;
+  border: 0.5px solid black;
+  background-color: black;
+  color: #eee;
+  font-family: "Poppins", sans-serif;
+  font-size: 13px;
+  border-radius: 5px;
+  padding: 10px 28px;
+  transition: 0.4s;
+  cursor: pointer;
+}
+
+.contact form .buton:hover {
+  background-color: white;
+  color: #090909;
+}
+/* *end contact style */
+
+/* *start footer style */
+footer {
+  background-color: #1c1c1c;
+  color: #748175;
+  padding-block: 1.5%;
+  margin-block: 0;
+}
+
+footer p {
+  font-size: 15px;
+  line-height: 21px;
+  font-weight: 400;
+}
+/* *end footer style */
+
+
+
+
+
